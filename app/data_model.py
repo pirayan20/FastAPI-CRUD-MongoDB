@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
 
-class Vote(BaseModel):
+class Product(BaseModel):
     name: str
-    count: int
+    price: int

@@ -37,7 +37,7 @@ To run the FastAPI application, execute the following script from the root of th
 
 ## API Endpoints
 
-- `POST /votes`: Create a new item in the database.
-- `GET /votes/{id}`: Retrieve an item by its unique ID.
-- `PUT /votes/{id}`: Update an item by its ID.
-- `DELETE /votes/{id}`: Delete an item by its ID.
+- `POST /products`: Create a new item in the database.
+- `GET /products/{id}`: Retrieve an item by its unique ID.
+- `PUT /products/{id}`: Update an item by its ID.
+- `DELETE /products/{id}`: Delete an item by its ID.
