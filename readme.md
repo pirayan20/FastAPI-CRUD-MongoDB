@@ -1,4 +1,4 @@
-# FastAPI-CRUD-MongoDB
+# FastAPI-CRUD-MongoDB-Streamlit
 
 ## Description
 
@@ -8,7 +8,6 @@ FastAPI-CRUD-MongoDB is a project demonstrating the implementation of CRUD opera
 
 - Python 3.8+
 - MongoDB
-- Uvicorn (for running the app)
 - Poetry
 
 ## Installation
