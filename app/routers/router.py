@@ -10,6 +10,15 @@ db = client["products"]
 collection = db["products"]
 
 
+@router.get("/products")
+async def get_all_products():
+    products = list(collection.find())
+    return [
+        {"id": str(product["_id"]), "name": product["name"], "price": product["price"]}
+        for product in products
+    ]
+
+
 @router.post("/products")
 async def create_product(product: Product):
     result = collection.insert_one(product.model_dump())
@@ -46,4 +55,4 @@ async def delete_product_by_id(id: str):
     if result.deleted_count == 1:
         return {"message": "Delete Successfully"}
     else:
-        HTTPException(status_code=404, detail="id not found in product")
+        raise HTTPException(status_code=404, detail="id not found in product")
